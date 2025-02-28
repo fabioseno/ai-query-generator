@@ -38,6 +38,7 @@ services:
         echo "📥 Pulling models inside Ollama container..."
         docker exec ollama ollama pull tinyllama
         docker exec ollama ollama pull deepseek-coder:1.3b
+        docker exec ollama ollama pull deepseek-coder:6.7b
         docker exec ollama ollama pull sqlcoder:7b
 
         echo "✅ Models downloaded. Exiting..."
